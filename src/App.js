@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Firstrow from './First-row';
+import Row from './Row';
+import Lastrow from './Lastrow';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <Firstrow value='0'/>
+      <Row value1='AC' value2='+/-' value3='%' value4='/'/>
+      <Row value1='7' value2='8' value3='9' value4='x'/>
+      <Row value1='4' value2='5' value3='6' value4='-'/>
+      <Row value1='1' value2='2' value3='3' value4='+'/>
+      <Lastrow value1='0' value2='.' value3='=' />
+      
     </div>
   );
 }
